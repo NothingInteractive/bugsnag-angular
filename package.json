@@ -8,7 +8,7 @@
   "scripts": {
     "preversion": "npm run test",
     "postversion": "git push && git push --tags && npm publish --tag $(./bin/dist-tag-value)",
-    "build": "ngc -p .",
+    "build": "ngc -p . && ngc -p tsconfig_umd.json",
     "lint": "tslint -p .",
     "test": "npm run lint && node test/integration.test.js"
   },

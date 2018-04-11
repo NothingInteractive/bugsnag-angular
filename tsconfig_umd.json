@@ -1,0 +1,31 @@
+{
+  "files": [
+    "./src/index.ts"
+  ],
+  "compilerOptions": {
+    "module": "umd",
+    "lib": [
+      "ES5",
+      "ES6",
+      "DOM"
+    ],
+    "allowJs": false,
+    "declaration": false,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "outDir": "./bundle/umd",
+    "rootDir": "./src",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "sourceRoot": "src",
+    "experimentalDecorators": true
+  },
+  "angularCompilerOptions": {
+    "skipTemplateCodegen": true,
+    "skipMetadataEmit": true
+  }
+}
